@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bmi calcumator</title>
+</head>
+<body>
+    <style>
+        body{
+           
+            margin-top: 100px;
+            margin-left: 400px;
+
+        }
+        h1{
+            margin-left: 100px;
+            margin-top: 10px;
+        }
+        form{
+            width: 480px;
+            height: 480px;
+            background-color: rgb(217, 229, 132);
+            border-radius: 9px;
+            padding: 40px;
+
+           
+        }
+        #height{
+            padding-right: 150px;
+            border: none;
+            background-color:transparent; 
+            outline: ch;
+            border-bottom: 1px solid black ;
+
+        }
+        label{
+            margin-right: 15px;
+            margin-left: 20px;
+
+        }
+        #weigth{
+            padding-right: 150px;
+            margin-top: 20px;
+            border: none;
+            background-color:transparent; 
+            outline: ch;
+            border-bottom: 1px solid black ;
+
+        }
+        button{
+            margin-top: 20px;
+            margin-left: 20px;
+            background-color: rgb(144, 144, 216);
+            padding: 3px;
+            width: 430px;
+            border-radius: 8px;
+            
+        
+        }
+        #guidline{
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+        #guidline h3{
+            margin-left: 130px;
+        }
+
+    </style>
+
+    <form >
+        <h1>BMI calculator</h1>
+
+        <label>Height in cm</label><input type="text" id="height">
+
+        <label for="">weigth in kg</label> <input type="text" id="weigth">
+        <button>calculate</button>
+        <div id="results"></div>
+        <div id="guidline">
+            <h3>BMI weigth guidline</h3>
+            <p>Normal weight: 18.5 less than equall to BMI less than 24.9</p>
+            <p>Underweight: BMI less than 18.5</p>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
